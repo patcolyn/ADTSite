@@ -1,0 +1,24 @@
+<html lang ="en">
+	<head>
+		<meta charset="UTF-8"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<title>Test</title>
+	</head>
+	<body>
+		<script src='https://cdnjs.cloudflare.com/ajax/libs/pdfobject/2.2.1/pdfobject.min.js'></script>
+		
+		<div id="pdf-container"></div>
+		<style>
+			.pdfobject-container{height: 29rem;width: 21rem; border:1rem solid rgba(0,0,0,.1);}
+		</style>
+		
+		<iframe width="425" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.openstreetmap.org/export/embed.html?bbox=18.377165794372562%2C-34.13066969711329%2C18.435101509094242%2C-34.1045913461419&amp;layer=mapnik&amp;marker=-34.11763152683756%2C18.4061336517334" style="border: 1px solid black"></iframe><br/><small><a href="https://www.openstreetmap.org/?mlat=-34.1176&amp;mlon=18.4061#map=15/-34.1176/18.4061&amp;layers=N">View Larger Map</a></small>
+
+		<script>
+			var options = {
+			pdfOpenParams: { view: 'FitV', scrollbar: '0', toolbar: '0', statusbar: '1', messages: '1', navpanes: '1' }
+			};
+			PDFObject.embed("./src/test.pdf", "#pdf-container", options);
+		</script>
+	</body>
+</html>
