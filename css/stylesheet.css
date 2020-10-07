@@ -1,4 +1,13 @@
+html {
+	height: 100%;
+}
+
+body {
+	height: 100%;
+}
+
 .jumbotron {
+	height: 100px;
     background-color:#2E2D88;
     color:white;
 }
@@ -11,4 +20,42 @@
 }
 .nav-tabs {
     margin-bottom: 0;
+}
+.navbar-nav.navbar-center {
+    position: absolute;
+    left: 50%;
+	transform: translatex(-50%);
+}
+.parallax {
+  background-image: url("https://images.unsplash.com/photo-1575444758702-4a6b9222336e?&w=1950&q=60");
+
+  /* Set a specific height */
+  height: 100%;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.logo-text {
+	color: white;
+	font-size: 100px;
+	font-family: "Times New Roman";
+
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin: 110px 0 0 -250px;
+}
+.logo {
+	width: 500px;
+	height: 500px;
+	padding: 20px;
+
+	position: absolute;
+
+	top: 50%;
+	left: 50%;
+	margin: -325px 0 0 -250px;
 }
