@@ -1,3 +1,12 @@
+@font-face {
+    font-family: 'Rio Grande';
+    src: url('RioGrande-Bold.woff2') format('woff2'),
+        url('RioGrande-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
 html {
 	height: 100%;
 }
@@ -26,8 +35,8 @@ body {
     left: 50%;
 	transform: translatex(-50%);
 }
-.parallax {
-  background-image: url("https://images.unsplash.com/photo-1575444758702-4a6b9222336e?&w=1950&q=60");
+.banner {
+  background-image: url("https://images.unsplash.com/photo-1575444758702-4a6b9222336e?w=1950&q=60");
 
   /* Set a specific height */
   height: 100%;
@@ -38,10 +47,26 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
 }
+
+.parallax {
+  background-image: url("https://images.unsplash.com/photo-1481833761820-0509d3217039?w=1950&q=60");
+
+  /* Set a specific height */
+  height: 100%;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 .logo-text {
 	color: white;
 	font-size: 100px;
-	font-family: "Times New Roman";
+	font-family: 'Rio Grande';
+    font-weight: bold;
+    font-style: normal;
 
 	position: absolute;
 	top: 50%;
@@ -58,4 +83,7 @@ body {
 	top: 50%;
 	left: 50%;
 	margin: -325px 0 0 -250px;
+}
+.footer {
+	text-align: center;
 }
