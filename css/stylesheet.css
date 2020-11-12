@@ -22,14 +22,17 @@ body {
     border-bottom: 1px solid #ddd;
     padding: 10px;
 }
+
 .nav-tabs {
     margin-bottom: 0;
 }
+
 .navbar-nav.navbar-center {
     position: absolute;
     left: 50%;
 	transform: translatex(-50%);
 }
+
 .banner {
   background-image: url("https://images.unsplash.com/photo-1575444758702-4a6b9222336e?w=1950&q=60");
   position: relative;
@@ -66,6 +69,7 @@ body {
 	padding-top: 30px;
     padding-bottom: 30px;
 }
+
 .logo {
   width: 640px;
   height: 480px;
@@ -77,6 +81,7 @@ body {
 
   margin: -340px 0 0 -260px;
 }
+
 .footer-copyright {
 	text-align: center;
 	background-color: white;
